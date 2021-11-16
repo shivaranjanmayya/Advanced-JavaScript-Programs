@@ -1,0 +1,129 @@
+.wrapper {
+    background: transparent;
+    background: no-repeat;
+    border-radius: 15px;
+    border-style: ridge;
+    padding: 10px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 15px;
+    border:1px solid rgba(43, 43,43, 0.468);
+    background: #300000;
+    background: linear-gradient(45deg, #f3f3f3, #f3f0f0, #f7f3f3, #ebe8e8);
+    color: rgb(15, 11, 11);
+  
+}
+.header{
+  margin-left: 20px;
+}
+.header p {
+  font-size: 5px;
+}
+
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0.8;
+    position: absolute;
+    margin-left:500px;
+    margin-right: 400px;
+    background-image:url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 30px;
+}
+   
+    .inputtext input {
+        padding: 12px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        margin-left: 20px;
+        float: left;
+        width: 35%;
+        transition: background-color .5s; 
+      }
+     
+      .input input {
+        padding: 12px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        margin-left: 20px;
+        width: 35%; 
+        float: left;
+        transition: background-color .5s; 
+      }
+    
+     
+      .inputtext1 input {
+        width: 81%;
+        padding: 12px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        margin-left: 20px;
+        flex-direction: row;
+        transition: background-color .5s; 
+        
+      }
+
+      .inputtext2 input {
+        width: 81%;
+        padding: 12px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        margin-left: 20px;
+        flex-direction: row;
+        transition: background-color .5s; 
+        
+      }
+     
+      .dob select {
+        width: 25.2%;
+        padding: 9px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        margin-left: 20px;
+        flex-direction: row;
+        transition: background-color .5s; 
+        
+      }
+      .femalegender,.malegender,.othergender{
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 4px;
+        flex-direction: row;
+        width: 21.7%;
+        padding: 7px;
+        float:left;
+        margin: 2px;
+        margin-left: 20px;
+        transition: background-color .5s; 
+        
+      }
+      .btn button{
+        width: 35.5%;
+        padding: 9px;
+        border: 1px solid rgb(31, 7, 7);
+        border-radius: 8px;
+        margin-left: 140px;
+        flex-direction: row;
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: background-color .5s; 
+      }
+      .btn:hover{
+          opacity: 0.6;
+      }
+
+      .para p{
+          font-size: 12px;
+          margin-left: 20px;
+          text-align: justify;
+      }
+     

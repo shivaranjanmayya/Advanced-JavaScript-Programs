@@ -4,9 +4,9 @@
 
 console.log('UI displayed');
 
-let count =0;
-function abc(){
-    console.log('fetching data...'+ ++count);
+let count = 0;
+let abc = () => {
+    console.log('fetching data...' + ++count);
 }
 
-setInterval(abc,1000);
+setInterval(abc, 1000);
