@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#error-firstname, #error-lastname, #errorEmail,#error-mno{
+    color: red;
+    margin-left: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+
+}
+.user-details .button input:focus,
+.user-details .button input:valid{
+    border-color: #9b59b6;
+}
+
+.user-details .button input:focus,
+.user-details .button input:invalid{
+    border-color: #ee0d0d;
+}
+
+
+body{
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6,#9b59b6);
+    background-image: url("https://www.nsbpictures.com/wp-content/uploads/2020/04/sunset-hd-background-photos-12-scaled.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6,#bb8dce);
+    opacity: 0.9;
+    transition: ease;
+    
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    color: rgb(8, 8, 105);
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+form .user-details .input-box{
+    width:50%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+    
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+form .gender-details .gender-title{
+    font-size:16px;
+    margin-left: 10px;
+    display: block;
+    font-weight: 600;
+
+    
+}
+form .gender-details .category{
+    
+    display: flex;
+    float: left;
+    width: 30%;
+    margin: 14px 0;;
+    justify-content:space-between;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    
+    
+    
+}
+.gender-details .category label{
+ 
+ display: flex;
+ align-items: center;
+ font-family: 'Poppins',sans-serif;
+ margin-top: -2px;
+ font-size: 16px;
+ font-weight: 500;
+}
+
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: rgb(19, 13, 121);
+
+}
+
+#male, #female,#transgender{
+    height: 15px;
+    width: 15px;
+    background: #d9d9d9;
+   
+    border-radius: 40%;
+   
+    margin-right: 40px;
+    border:5px solid transparent;
+    transition: all 0.3s ease;
+}
+.category, #male, #female,#transgender{
+    background: white;
+    border-radius: 4px;
+    flex-direction: row;
+    width: 11.7%;
+    padding: 9px;
+    float:left;
+    margin: 2px;
+    margin-left: 10px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+
+form .button input:hover{
+    background-color: rgb(137, 134, 189);
+
+}
+@media (max-width:584px)
+{
+    .container{
+        max-width: 100%;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details .category .button{
+        max-height: 300px;
+        overflow-y:scroll ;
+    }
+  
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

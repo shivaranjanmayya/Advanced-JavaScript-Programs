@@ -99,7 +99,8 @@ body{
         float:left;
         margin: 2px;
         margin-left: 20px;
-        transition: background-color .5s; 
+        transition: background-color .5s;
+        
         
       }
       .btn button{

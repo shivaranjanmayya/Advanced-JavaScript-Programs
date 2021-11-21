@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register_style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <script src="register_script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your name" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your Email" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="message">Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Confirm_password">Confirm Password</label>
+                <input type="password" placeholder="Re-type your password again" id="cpassword" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Age">Age</label>
+                <input type="number" placeholder="Please enter your age" id="age" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Date">Date of Birth </label>
+                <input type="date" placeholder="Please enter your birth date" id="date" />
+
+                <small>Error message</small>
+            </div>
+            <div class="gender-details">
+                <span class="gender-title">Gender </span>
+                <div class="category">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male">
+                </div>
+
+                <div class="category">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female">
+                </div>
+
+                <div class="category">
+                    <label for="transgender">Others</label>
+                    <input type="radio" name="gender" id="transgender">
+                    
+                </div>
+                
+                <small id="gender" ></small>
+            </div>
+
+            <button onclick="validate()">Register</button>
+        </form>
+    </div>
