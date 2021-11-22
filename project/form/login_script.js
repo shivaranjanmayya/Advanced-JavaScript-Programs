@@ -14,7 +14,7 @@ function validate() {
 
 		const usernameValue = username.value.trim();
 		const passwordValue = password.value.trim();
-	
+
 
 
 		if (usernameValue === "") {
@@ -28,7 +28,7 @@ function validate() {
 			setSuccessFor(username);
 		}
 
-	
+
 
 		if (passwordValue === "") {
 			setErrorFor(password, "Password cannot be blank");
@@ -54,7 +54,7 @@ function validate() {
 		}
 
 
-		
+
 		function isusername(username) {
 			return /^[a-zA-Z0-9!@#\$%\^\&*]+$/.test(username);
 		}

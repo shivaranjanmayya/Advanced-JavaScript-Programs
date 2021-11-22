@@ -82,25 +82,6 @@ body {
 	margin-bottom: 2px;	
 }
 
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-	
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-	
-}
-
 .form-control small {
 	color: #e74c3c;
 	position: absolute;
@@ -116,9 +97,7 @@ body {
 	left: 0;
 	visibility: hidden;
 	margin-left: 520px;
-	margin-bottom: -165px;
-		
-
+	margin-bottom: -135px;
 }
 
 .form-control.error small {
@@ -150,7 +129,6 @@ body {
     font-weight: bolder;
 }
 
-
 .category, #male, #female,#transgender{
     background: white;
     border-radius: 4px;
@@ -165,16 +143,21 @@ body {
     transition: all 0.3s ease;
 	float: left;
 	margin-bottom: 10px;
-    
 }
 
+@media screen and (max-width: 668px) {
 
-@media screen and (max-width: 480px) {
-
-
-	.floating-btn {
-		right: 10px;
+	.gender-details small{
+		color: #e74c3c;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		visibility: hidden;
+		margin-left: 179px;
+		margin-bottom: -218px;
+			
 	}
+	
 }
 
 

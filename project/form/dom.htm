@@ -9,44 +9,115 @@
 </head>
 
 <body>
-  <form>
-
-  
-  <button onclick="domain_name()">Domain name</button>
+  <h1>The Document Object examples</h1>
+  <h4>Domain name : </h4>
+  <button onclick="domain_name()">Result</button>
   <p id="domainname"></p>
-  <button onclick="document_title()">Document title</button><br />
-  <p id="doctitle"></p>
-  <button onclick="document_url()">Full URL of document</button><br />
-  <p id="docurl" name="doc"></p>
-  <button onclick="window_url()">Open a new window with some content in it</button><br />
-  <p id="docurl"></p>
-  <button onclick="countname()">Count the number of elements with specific name</button><br />
-  <p id="name"></p>
-  <button onclick="counttag()">Count the number of elements with specific tag</button><br />
-  <p id="tag"></p>
-  <button onclick="countanchor()">Count the number of anchors</button><br />
+  <h1>--------------------------------------</h1>
 
+  <h4>Document Title : </h4>
+  <button onclick="document_title()">Result</button><br />
+  <p id="doctitle"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Full URL of document : </h4>
+  <button onclick="document_url()">Result</button><br />
+  <p id="docurl" name="doc"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Open a new window with some content in it : </h4>
+  <button onclick="window_url()">Result</button><br />
+  <p id="docurl"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Count the number of elements with specific name : </h4>
+  <button onclick="countname()">Result</button><br />
+  <p id="name"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Count the number of elements with specific tag : </h4>
+  <button onclick="counttag()">Result</button><br />
+  <p id="tag"></p>
+  <h1>--------------------------------------</h1>
+
+  <h1>The Anchors Collection</h1>
+
+  <h4>Count the number of anchors : </h4>
+  <button onclick="countanchor()">Result</button><br />
   <p id="atag"></p>
   <a href="https://www.google.com" name="Google" id="attribute">Google</a><br>
   <a href="https://www.gmail.com" name="Gmail">Gmail</a>
-  <br><br>
-  <button onclick="firstanchor()">Find the innerHTML of the first anchor in the document</button>
-  <p id="a"></p>
-  <button onclick="nooflinks()">Count the number of links in a document
-  </button>
-  <p id="link"></p>
-  <button onclick="hrefattribute()">Display the href attribute of the first link
-  </button>
-  <p id="att"></p>
+  <h1>--------------------------------------</h1>
 
-</form>
+  <h4>Find the innerHTML of the first anchor in the document : </h4>
+  <button onclick="firstanchor()">Result</button>
+  <p id="a"></p>
+  <h1>--------------------------------------</h1>
+
+  <h1>The Links Collection</h1>
+
+  <h4>Count the number of links in a document : </h4>
+  <button onclick="nooflinks()">Result</button>
+  <p id="link"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Display the href attribute of the first link : </h4>
+  <button onclick="hrefattribute()">Result</button>
+  <p id="att"></p>
+  <h1>--------------------------------------</h1>
+  <h1>The Forms Collection</h1>
+  <form name="form1">
+    <input type="text" placeholder="Enter your name">
+    <input type="button" name="Submit" value="Submit">
+  </form>
+  <form name="form2">
+    <input type="text" placeholder="Enter your name">
+    <input type="button" name="Submit" value="Submit">
+  </form><br />
+
+  <h4>Count the number of forms in a document : </h4>
+  <button onclick="countforms()">Result</button>
+  <p id="form"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Display the name of the first form : </h4>
+  <button onclick="displayfirstformname()">Display the name of the first form</button>
+  <p id="formname"></p>
+  <h1>--------------------------------------</h1>
+  <h1>The Images Collection</h1>
+  <figure>
+    <img
+      src="https://media.istockphoto.com/photos/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-picture-id1279460648?b=1&k=20&m=1279460648&s=170667a&w=0&h=uZa830sWo8hlFN0Y7FnQ14giNC0Z2EBNuTMuNJeJhQg="
+      id="image1">
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+  </figure>
+
+  <h4>Number of images : </h4>
+  <button onclick="noofimages()">Number of images : </button>
+  <p id="image"></p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Id of the first image : </h4>
+  <button onclick="image_id()">Result</button>
+  <p id="imageid"></p>
+  <h1>--------------------------------------</h1>
+
+  <h1>CSS Manipulation</h1>
+
+  <h4>Change the visibility of an element (hide/show) : </h4>
+  <button onclick="hide_or_show()">Hide/show</button>
+  <p id="content">Welcome</p>
+  <h1>--------------------------------------</h1>
+
+  <h4>Change the background of an element : </h4>
+  <button onclick="background()">Result</button>
+  <h1>--------------------------------------</h1>
 
 </body>
 <script>
   function domain_name() {
     var x = document.domain;
     document.getElementById("domainname").innerHTML = x;
-
   }
   function document_title() {
     var y = document.title;
@@ -82,6 +153,36 @@
     document.getElementById("attribute").href = "http://127.0.0.1:5501/form/register.htm?";
     document.getElementById("att").innerHTML = "Redirected to http://127.0.0.1:5501/form/register.htm?";
   }
+  function countforms() {
+    var x = document.forms.length;
+    document.getElementById("form").innerHTML = x;
+  }
+  function displayfirstformname() {
+    document.getElementById('formname').innerHTML = document.forms[0].name;
+
+  }
+  function noofimages() {
+    var x = document.images.length;
+    document.getElementById("image").innerHTML = x;
+  }
+  function image_id() {
+    var x = document.images[0].id;
+    document.getElementById("imageid").innerHTML = x;
+  }
+  function hide_or_show() {
+    var x = document.getElementById("content");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+
+    }
+  }
+  function background() {
+
+    document.body.style.background = "sandybrown";
+  }
+
 </script>
 
 </html>

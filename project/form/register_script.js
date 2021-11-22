@@ -8,8 +8,6 @@ function validate() {
 	const age = document.getElementById("age");
 	const date = document.getElementById("date");
 
-
-
 	form.addEventListener("submit", (e) => {
 		e.preventDefault();
 

@@ -83,25 +83,6 @@ body {
 	margin-bottom: 2px;	
 }
 
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
-.form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
-	
-}
-
-.form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
-	
-}
-
 .form-control small {
 	color: #e74c3c;
 	position: absolute;
@@ -132,17 +113,10 @@ body {
 	
 }
 
+@media screen and (max-width: 668px) {
 
 
-
-
-
-@media screen and (max-width: 480px) {
-
-
-	.floating-btn {
-		right: 10px;
-	}
+	
 }
 
 
