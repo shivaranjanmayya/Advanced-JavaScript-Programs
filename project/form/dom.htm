@@ -2,61 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My title</title>
 </head>
 
 <body>
-    <button onclick="domain_name()">Domain name</button>
-    <p id="domainname"></p>
-    <button onclick="document_title()">Document title</button><br/>
-    <p id="doctitle"></p>
-    <button onclick="document_url()">Full URL of document</button><br/>
-    <p id="docurl" name="doc"></p>
-    <button onclick="window_url()">Open a new window with some content in it</button><br/>
-    <p id="docurl"></p>
-    <button onclick="countname()">Count the number of elements with specific name</button><br/>
-    <p id="name"></p>
-    <button onclick="counttag()">Count the number of elements with specific tag</button><br/>
-    <p id="tag"></p>
-    <button onclick="countanchor()">Count the number of anchors</button><br/>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <p id="atag"></p>
+  <form>
+
+  
+  <button onclick="domain_name()">Domain name</button>
+  <p id="domainname"></p>
+  <button onclick="document_title()">Document title</button><br />
+  <p id="doctitle"></p>
+  <button onclick="document_url()">Full URL of document</button><br />
+  <p id="docurl" name="doc"></p>
+  <button onclick="window_url()">Open a new window with some content in it</button><br />
+  <p id="docurl"></p>
+  <button onclick="countname()">Count the number of elements with specific name</button><br />
+  <p id="name"></p>
+  <button onclick="counttag()">Count the number of elements with specific tag</button><br />
+  <p id="tag"></p>
+  <button onclick="countanchor()">Count the number of anchors</button><br />
+
+  <p id="atag"></p>
+  <a href="https://www.google.com" name="Google" id="attribute">Google</a><br>
+  <a href="https://www.gmail.com" name="Gmail">Gmail</a>
+  <br><br>
+  <button onclick="firstanchor()">Find the innerHTML of the first anchor in the document</button>
+  <p id="a"></p>
+  <button onclick="nooflinks()">Count the number of links in a document
+  </button>
+  <p id="link"></p>
+  <button onclick="hrefattribute()">Display the href attribute of the first link
+  </button>
+  <p id="att"></p>
+
+</form>
 
 </body>
 <script>
-    function domain_name() {
-        var x = document.domain;
-        document.getElementById("domainname").innerHTML = x;
+  function domain_name() {
+    var x = document.domain;
+    document.getElementById("domainname").innerHTML = x;
 
-    }
-    function document_title() {
-        var y = document.title;
-        document.getElementById("doctitle").innerHTML = y;
-    }
-    function document_url() {
-        var z = document.URL;
-        document.getElementById("docurl").innerHTML = z;
-    }
-    function window_url() {
-  window.open("http://127.0.0.1:5501/form/register.htm?");
-}
-function countname() {
-  var elementsname = document.getElementsByName("doc").length;
-  document.getElementById("name").innerHTML = elementsname;
-}
-function counttag() {
-  var elementsname = document.getElementsByTagName("P").length;
-  document.getElementById("tag").innerHTML = elementsname;
-}
-function countanchor(){
+  }
+  function document_title() {
+    var y = document.title;
+    document.getElementById("doctitle").innerHTML = y;
+  }
+  function document_url() {
+    var z = document.URL;
+    document.getElementById("docurl").innerHTML = z;
+  }
+  function window_url() {
+    window.open("http://127.0.0.1:5501/form/register.htm?");
+  }
+  function countname() {
+    var elementsname = document.getElementsByName("doc").length;
+    document.getElementById("name").innerHTML = elementsname;
+  }
+  function counttag() {
+    var elementsname = document.getElementsByTagName("P").length;
+    document.getElementById("tag").innerHTML = elementsname;
+  }
+  function countanchor() {
     var elementsname = document.getElementsByTagName("a").length;
-  document.getElementById("atag").innerHTML = elementsname;
+    document.getElementById("atag").innerHTML = elementsname;
 
-}
+  }
+  function firstanchor() {
+    document.getElementById("a").innerHTML = document.anchors[0].innerHTML;
+  }
+  function nooflinks() {
+    document.getElementById("link").innerHTML = + document.links.length;
+  }
+  function hrefattribute() {
+    document.getElementById("attribute").href = "http://127.0.0.1:5501/form/register.htm?";
+    document.getElementById("att").innerHTML = "Redirected to http://127.0.0.1:5501/form/register.htm?";
+  }
 </script>
 
 </html>
