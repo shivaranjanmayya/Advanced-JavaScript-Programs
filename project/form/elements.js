@@ -1,6 +1,8 @@
 var div = document.createElement('div');
 div.id = "result";
+document.body.appendChild(div);
 var div1 = document.createElement('div');
+document.body.appendChild(div1);
 var p = document.createElement('P');
 p.id = "para1";
 var h1 = document.createElement('H1');
