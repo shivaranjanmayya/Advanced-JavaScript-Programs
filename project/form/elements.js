@@ -12,8 +12,9 @@ h1.innerText = "First Paragraph";
 document.body.appendChild(h1);
 p.innerHTML = "This is my First Paragraph";
 document.body.appendChild(p);
-div1.appendChild(p);
 div1.appendChild(h1);
+div1.appendChild(p);
+
 
 var p = document.createElement('P');
 p.id = "para2";
@@ -23,7 +24,8 @@ h1.innerText = "Second Paragraph";
 document.body.appendChild(h1);
 p.innerHTML = "This is my Second Paragraph";
 document.body.appendChild(p);
-div1.appendChild(p);
 div1.appendChild(h1);
+div1.appendChild(p);
+
 
 div.appendChild(div1);
